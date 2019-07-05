@@ -5,9 +5,9 @@
     .then(data => {
         // Work with JSON data here
         var element = document.getElementById("json_data");
-        var array_1 = data[0];
-        //element.innerHTML = name;
-        console.log(array_1)
+        var name = data[0].Name;
+        element.innerHTML = name;
+        console.log(name);
     })
     .catch(err => {
         // Do something for an error here
