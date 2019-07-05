@@ -5,7 +5,7 @@
     .then(data => {
         // Work with JSON data here
         var element = document.getElementById("json_data");
-        var array_1 = JSON.stringify(data)
+        var array_1 = data[0];
         //element.innerHTML = name;
         console.log(array_1)
     })
