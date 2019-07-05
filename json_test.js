@@ -5,7 +5,8 @@
     .then(data => {
         // Work with JSON data here
         var element = document.getElementById("json_data");
-        var name = data[0].Name;
+        var dict = data[0];
+        var name = dict.get(Name);
         element.innerHTML = name;
         console.log(name);
     })
