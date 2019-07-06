@@ -13,9 +13,9 @@
             var dict_set_i = data[0];
             console.log("trial 1, change data[i] to data[0]; log=");
             console.log(dict_set_i);
-            //var name = dict_set_i.get(Name);
+            var name = dict_set_i.get("Name");
             //element.innerHTML = name;
-            //console.log(name);
+            console.log(name);
         })
         .catch(err => {
             // Do something for an error here
