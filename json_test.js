@@ -1,4 +1,5 @@
 ﻿function set_variables(i) {
+    console.log("fetching...");
 
     fetch('json1.json')
         .then(response => {
@@ -20,6 +21,7 @@
 };
 
 function run_fetch() {
+    console.log("running fetch");
     var i = 0;
     set_variables(i);
-}
+};
