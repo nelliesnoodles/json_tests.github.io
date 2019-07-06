@@ -4,26 +4,17 @@ In one file, the json data
 Formatted as such:
 
  [
-             quiz content {
-                           'question_j': 'string',   
-                           'correct_j' : 'string',
-                           'answers_j' : object{
-                                       'a': 'string',
-                                       'b': 'string',
-                                       'c': 'string',
-                                       'd': 'string'
-                                       }
-                           },
-             next content (same as above)  {
-                           'question_j': 'string',   
-                           'correct_j' : 'string',
-                           'answers_j' : object{
-                                       'a': 'string',
-                                       'b': 'string',
-                                       'c': 'string',
-                                       'd': 'string'
-                                       }
-                           }
+             {
+             "item": string,
+             "item2": string,
+             "item3": string
+             },
+             {
+             "item": string,
+             "item2": string,
+             "item3": string
+             },
+             
  ]
     
 
