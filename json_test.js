@@ -7,6 +7,7 @@
         .then(data => {
             // Work with JSON data here
             var element = document.getElementById("json_data");
+            element.innerHTML = "fetching...."
             var dict = data[i];
             var name = dict.get(Name);
             element.innerHTML = name;
