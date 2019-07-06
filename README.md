@@ -1,23 +1,68 @@
-## Welcome to GitHub Pages
+## Testing use case of json file to store objects in a list
 
-You can use the [editor on GitHub](https://github.com/nelliesnoodles/json_tests.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+In one file, the json data   
+Formatted as such:
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+ [
+             quiz content {
+                           'question_j': 'string',   
+                           'correct_j' : 'string',
+                           'answers_j' : object{
+                                       'a': 'string',
+                                       'b': 'string',
+                                       'c': 'string',
+                                       'd': 'string'
+                                       }
+                           },
+             next content (same as above)  {
+                           'question_j': 'string',   
+                           'correct_j' : 'string',
+                           'answers_j' : object{
+                                       'a': 'string',
+                                       'b': 'string',
+                                       'c': 'string',
+                                       'd': 'string'
+                                       }
+                           }
+ ]
+    
 
-### Markdown
+### JavaScript
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+```
+function set_variables(i) {
 
-```markdown
-Syntax highlighted code block
+    fetch('json1.json')
+        .then(response => {
+            return response.json()
+        })
+        .then(data => {
+            // Work with JSON data here
+            var element = document.getElementById("json_data");
+            var dict = data[i];
+            var name = dict.get(Name);
+            element.innerHTML = name;
+            console.log(name);
+        })
+        .catch(err => {
+            // Do something for an error here
+        })
+};
 
-# Header 1
-## Header 2
-### Header 3
+function run_fetch() {
+    var i = 0;
+    set_variables(i);
 
-- Bulleted
-- List
+```
+# Goal:
+    Get the set_variables to grab from the json data an object by index to set my main contents constants by.
 
+
+- why won't it work in a function rather than on it's own outside of a function?
+- catch err keeps being triggered when trying to retrieve specific get(item) from the object
+
+
+# Reminders from original Github markdown page:
 1. Numbered
 2. List
 
