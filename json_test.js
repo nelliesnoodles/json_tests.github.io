@@ -14,6 +14,7 @@
         })
         .catch(err => {
             // Do something for an error here
+            console.log("Error in data transfer from json");
         })
 };
 
