@@ -11,7 +11,7 @@
             element.innerHTML = "fetching...."
             //var dict = data[i];  //<--  not working
             var dict_set_i = data[0];
-            console.log(dict_set_i);
+            console.log(dict_set_i.get(Name));
             //console.log(dict);
             //var name = dict.get(Name);
             var name = dict_set_i.get(Name);
