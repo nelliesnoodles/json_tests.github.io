@@ -1,7 +1,7 @@
 ﻿function set_variables(i) {
     console.log("fetching...");
 
-    fetch('json1.json')
+    return fetch('json1.json')
         .then(response => {
             return response.json()
         })
