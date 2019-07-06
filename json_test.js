@@ -7,13 +7,11 @@
         })
         .then(data => {
             // Work with JSON data here
+            //var dict = data[i];  //<--  not working
             var element = document.getElementById("json_data");
             element.innerHTML = "fetching...."
-            //var dict = data[i];  //<--  not working
             var dict_set_i = data[0];
             console.log(dict_set_i.get(Name));
-            //console.log(dict);
-            //var name = dict.get(Name);
             var name = dict_set_i.get(Name);
             element.innerHTML = name;
             console.log(name);
