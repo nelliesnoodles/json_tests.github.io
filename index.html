@@ -30,7 +30,7 @@
     font-weight: bold;
   }
   </style>
-  <button onclick="run_fetch()">CLICK ME: A code quiz question</button>
+  <button onclick="run_fetch()" id="start">CLICK ME: A code quiz question</button>
   <main id="hide_main">
     <style>
     {
@@ -38,15 +38,17 @@
       background: #E8DDEF;
       border: solid 5px black;
     }
+    button {
+      width: 10px;
+      border: none;
+    }
     #hint{
       font-weight: lighter;
     }
     #question{
       font-style: normal;
     }
-    button {
-      float: left;
-    }
+
     ul {
       display: inline-block;
       margin-top: 2vh;

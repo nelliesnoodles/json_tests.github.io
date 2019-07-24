@@ -79,8 +79,10 @@ function setDOMelements(){
 
 function run_fetch() {
     let main = document.getElementById("hide_main");
+    let start_button = document.getElementById("start");
     console.log("running fetch");
     setDOMelements()
     set_variables();
     main.style.display = 'inline';
+    start_button.style.display = 'none';
 };
