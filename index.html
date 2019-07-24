@@ -30,6 +30,10 @@
     #question{
       font-style: normal;
     }
+    ul {
+      margin-top: 2vh;
+      border-bottom: solid 2px #FA8072;
+    }
     li {
       font-weight: bold;
       list-style-type: none;
@@ -51,11 +55,22 @@
     <div id="code_box" style="color:white; background: darkgrey; border: solid blue 6px;">
       <p><pre><code id="code_json" class="dark-theme"></code></pre></p>
       <ul>
-        <li id="answer_a"><button>A</button></li>
-        <button>B</button><li id="answer_b"></li>
-        <button>C</button><li id="answer_c"></li>
-        <button>D</button><li id="answer_d"></li>
+        <button>A</button>
+        <li id="answer_a"></li>
       </ul>
+      <ul>
+        <button>B</button>
+        <li id="answer_b"></li>
+      </ul>
+      <ul>
+        <button>C</button>
+        <li id="answer_c"></li>
+      </ul>
+      <ul>
+        <button>D</button>
+        <li id="answer_d"></li>
+      </ul>
+    </div>
       <h3>Correct answer:</h3>
       <h4 id="correct" style="text-align: center; font-size: 2em; text-shadow: 2px 2px 2px green;"></h4>
 </main>
