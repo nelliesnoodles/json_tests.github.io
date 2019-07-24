@@ -19,7 +19,7 @@ let box_type;
 let options;
 
 
-function set_variables(i) {
+function set_variables() {
     console.log("fetching...");
 
     return fetch('json1.json')
@@ -30,7 +30,7 @@ function set_variables(i) {
             // Work with JSON data here
             // DOM elements are set previous to running this function.
             console.log("setting data to JS variables, assigning to DOM elements.");
-            var dict = data[i];
+            var dict = data[0];
             var fetched_question = dict.question_j;
             question.innerHTML = fetched_question;
             var fetched_correct = dict.correct_j;
@@ -60,6 +60,7 @@ function set_variables(i) {
         .catch(err => {
             // Do something for an error here
             console.log("Error in data transfer from json");
+            console.log(err.message);
         })
 };
 
@@ -79,6 +80,5 @@ function setDOMelements(){
 function run_fetch() {
     console.log("running fetch");
     setDOMelements()
-    var i = 0;
-    set_variables(i);
+    set_variables();
 };
