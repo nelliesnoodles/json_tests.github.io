@@ -1,12 +1,15 @@
 [
   {
-    "Name": "Nellie",
-    "Speciality": "code demolition",
-    "age": "40"
-  },
-  {
-    "Name": "Dante",
-    "Speciality": "Memes",
-    "age": "12"
+    "question_j": "What would be the best guess what this code does?";
+    "code_j": "if(chocolate) { eat(chocolate); };";
+    "correct_j": "c",
+    "box_type_j": "code",
+    "hint_j": "It's chocolate, of course I'm going to eat it.",
+    "answers_j": {
+      "a": "When I say chocoloate, you say Wooo!.",
+      "b": "43",
+      "c": "if chocolate exists and is not null or False or 0,  Perform eat on chocolate.",
+      "d": "Something something, and we are all happier."
+    }
   }
 ]

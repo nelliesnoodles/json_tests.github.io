@@ -1,14 +1,79 @@
 ﻿<!DOCTYPE html>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
+
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript" src="json_test.js"></script>
-    <title>test fetch</title>
+    <title>JSON fetching && DOM assignment</title>
 </head>
 <body>
-    <button onclick="run_fetch()">what's my name?</button>
-    <p id="json_data"></p>
+  <style>
+  {
+  margin-left: 5vw;
+  margin-right: 5vw;
+  background: #F4F0F7;
+  font-weight: bold;
+  }
+  </style>
+  <main>
+    <style>
+    {
+      padding: 5px;
+      background: #E8DDEF;
+      border: solid 5px black;
+    }
+    #hint{
+      font-weight: lighter;
+    }
+    #question{
+      font-style: normal;
+    }
+    li {
+      font-weight: bold;
+    }
+    .dark-theme {
+      border: solid white 3px;
+      background: darkgrey;
+      color: #F4F0F7;
+    }
+    </style>
+
+    <button onclick="run_fetch()">A code quiz question</button>
+    <h4 id="hint"></h4>
+    <h1 id="question"></h1>
+    <div id="code_box" style="color:white; background: darkgrey; border: solid blue 6px;">
+      <p><code id="code_json" class="dark-theme"></code></p>
+      <ul>
+        <button>A</button><li id="answer_a"></li>
+        <button>B</button><li id="answer_b"></li>
+        <button>C</button><li id="answer_c"></li>
+        <button>D</button><li id="answer_d"></li>
+      </ul>
+      <h3>Correct answer:</h3>
+      <h4 id="correct"></h4>
+</main>
+<div style="border-bottom: solid blue 8px;"></div>
+<h3>  This is the json data set-up: </h3>
+<code class="dark-theme">
+  [
+    {
+      "question_j": "What would be the best guess what this code does?";
+      "code_j": "if(chocolate) { eat(chocolate); };";
+      "correct_j": "c",
+      "box_type_j": "code",
+      "hint_j": "It's chocolate, of course I'm going to eat it.",
+      "answers_j": {
+        "a": "When I say chocoloate, you say Wooo!.",
+        "b": "43",
+        "c": "if chocolate exists and is not null or False or 0,  Perform eat on chocolate.",
+        "d": "Something something, and we are all happier."
+      }
+    }
+  ]
+</code>
+
 
 </body>
 </html>
