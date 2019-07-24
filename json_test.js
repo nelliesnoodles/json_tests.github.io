@@ -66,7 +66,7 @@ function set_variables(i) {
 
 function setDOMelements(){
   console.log("Setting DOM elements in JS.")
-  question=document.getElementsById("question");
+  question=document.getElementById("question");
   hint=document.getElementById("hint");
   code_box=document.getElementById("code_box");
   code_json=document.getElementById("code_json");
