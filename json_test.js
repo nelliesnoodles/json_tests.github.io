@@ -30,7 +30,6 @@ function set_variables(i) {
             // Work with JSON data here
             // DOM elements are set previous to running this function.
             console.log("setting data to JS variables, assigning to DOM elements.");
-            var element = document.getElementById("json_data");
             var dict = data[i];
             var fetched_question = dict.question_j;
             question.innerHTML = fetched_question;
