@@ -78,7 +78,9 @@ function setDOMelements(){
 }
 
 function run_fetch() {
+    let main = document.getELementById("hide_main");
     console.log("running fetch");
     setDOMelements()
     set_variables();
+    main.style.display = 'inline';
 };
