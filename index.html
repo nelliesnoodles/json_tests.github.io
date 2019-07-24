@@ -32,11 +32,16 @@
     }
     li {
       font-weight: bold;
+      list-style-type: none;
+      text-shadow: 1px 2px 3px black;
+      font-size: 1em;
     }
     .dark-theme {
       border: solid white 3px;
       background: #20092F;
       color: #F4F0F7;
+      padding: 10px;
+      font-size: 1.5em;
     }
     </style>
 
@@ -46,13 +51,13 @@
     <div id="code_box" style="color:white; background: darkgrey; border: solid blue 6px;">
       <p><pre><code id="code_json" class="dark-theme"></code></pre></p>
       <ul>
-        <button>A</button><li id="answer_a"></li>
+        <li id="answer_a"><button>A</button></li>
         <button>B</button><li id="answer_b"></li>
         <button>C</button><li id="answer_c"></li>
         <button>D</button><li id="answer_d"></li>
       </ul>
       <h3>Correct answer:</h3>
-      <h4 id="correct"></h4>
+      <h4 id="correct" style="text-align: center; font-size: 2em; text-shadow: 2px 2px 2px green;"></h4>
 </main>
 <div style="border-bottom: solid blue 8px;"></div>
 <h3>  This is the json data set-up: </h3>
