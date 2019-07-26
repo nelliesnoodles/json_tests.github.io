@@ -1,7 +1,7 @@
 [
   {
     "question_j": "What would be the best guess what this code does?",
-    "code_j": "if(chocolate) { eat(chocolate); };",
+    "code_j": ["if(chocolate) {", "    eat(chocolate); };"],
     "correct_j": "c",
     "box_type_j": "code",
     "hint_j": "It is chocolate, of course I am going to eat it.",
