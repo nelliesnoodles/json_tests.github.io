@@ -44,9 +44,6 @@ function set_variables() {
 
             if (fetched_box_type == 'code'){
               var fetched_code = dict.code_j;
-              for(var i =0; i< fetched_code.length; i++){
-                code_json.innerHTML += fetched_code[i];
-              };
               code_json.innerHTML = fetched_code;
               var fetched_a = options.a;
               answer_a.innerHTML = fetched_a;
